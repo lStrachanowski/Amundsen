@@ -145,6 +145,8 @@ div:hover>.menuBar {
   width: 100%;
 }
 
+
+
 .bannerMountainText {
   position: absolute;
   font-family: 'ArnoPro-Bold';
@@ -196,9 +198,9 @@ tab1 {
   height: 108px;
   overflow: hidden;
   text-align: center;
-  -webkit-transition: all ease 0.8s;
-  -moz-transition: all ease 0.8s;
-  transition: all ease 0.8s;
+  -webkit-transition: all ease 1.8s;
+  -moz-transition: all ease 1.8s;
+  transition: all ease 1.8s;
   box-shadow: inset 0 0 0 0 rgb(238, 238, 238);
 }
 
@@ -216,7 +218,7 @@ tab1 {
 }
 
 .hov:hover .tableItem {
-  box-shadow: inset 500px 0 0 0 #e0e0e0;
+  box-shadow: inset 900px 0 0 0 #e0e0e0;
 }
 
 .nopadding {
@@ -439,12 +441,21 @@ div.redMarker>p {
     letter-spacing: 2px;
     transition: font-size 0.5s, color 0.5s;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 415px) {
     .mountainRed {
       height: 50%;
     }
     .bannerText {
       font-size: 5.278rem;
     }
+    .banerContainerPadding{
+      margin-top: 45px;
+    }
+    .topMargin {
+    text-align: center;
+    }
+    .logoFontLeft {
+    margin-left: 0%;
+}
   }
 }
