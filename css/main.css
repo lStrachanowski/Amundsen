@@ -1,0 +1,450 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Berndal LT Std Bold';
+  src: url('../fonts/berndal-lt-std-bold-593b01199a46c.otf');
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Berndal LT Std SC';
+  src: url('../fonts/berndal-lt-std-sc-593b04af819fc.otf');
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'ArnoPro-Regular';
+  src: url('../fonts/ArnoPro-Regular.otf');
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'ArnoPro-Bold';
+  src: url('../fonts/arno-pro-bold-593c3d86cd202.otf');
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: 62.5%;
+
+}
+ul {
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+  margin-top: 5%;
+}
+
+li {
+  list-style-type: none;
+  margin-top: 2%;
+
+}
+
+li > a {
+  color: rgb(255, 255, 255);
+}
+
+li > a:hover {
+  color: rgb(128, 216, 244);
+}
+
+.clear{
+  clear: both;
+  list-style: none;
+}
+.noScroll{
+  overflow-y: hidden;
+}
+
+.menuActive{
+  font-family: 'Berndal LT Std SC';
+  font-size: 2.8rem;
+  top: 0;
+  background-color: rgb(0, 92, 144);
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /*opacity: 0.95;*/
+  text-align: center;
+}
+.menuDeactivated{
+  display: none;
+}
+
+.logoFont {
+  font-family: 'Berndal LT Std SC';
+  font-size: 4.8rem;
+  display: inline-block;
+  letter-spacing: 2px;
+  margin-left: 7%;
+  margin-top: 2%;
+}
+
+.flag {
+  width: 30px;
+  margin-bottom: 10px;
+  background:
+}
+
+.centerLogo {
+  vertical-align: middle
+}
+
+.topMargin {
+  margin-top: 2.2%;
+}
+
+.alignMenuRight {
+  display: inline;
+  float: right;
+  margin-right: 7%;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+.menuBar {
+  width: 75px;
+  height: 10px;
+  background-color: rgb(36, 36, 36);
+  border-radius: 4px;
+  margin: 6px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+div:hover>.menuBar {
+  width: 75px;
+  height: 10px;
+  background-color: rgb(0, 92, 144);
+  border-radius: 4px;
+  margin: 6px;
+}
+
+.banner {
+  width: 100%;
+  margin-top: 2%;
+}
+
+.bannerText {
+  position: absolute;
+  font-family: 'Berndal LT Std SC';
+  font-size: 16.278rem;
+  top: 60%;
+  left: 38%;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  line-height: 0.55;
+  rgb(173, 208, 255) letter-spacing: 4px;
+}
+
+.banerContainer {
+  position: relative;
+  width: 100%;
+}
+
+.bannerMountainText {
+  position: absolute;
+  font-family: 'ArnoPro-Bold';
+  font-size: 4.8rem;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+
+.mountainRed {
+  position: absolute;
+  height: 18%;
+  top: 50%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: rgb(239, 43, 45);
+  opacity: 0.8;
+}
+
+.banerBlack {
+  color: rgb(0, 0, 0);
+}
+
+.imgWide {
+  width: 100%;
+}
+
+.descriptionText {
+  font-family: 'ArnoPro-Regular';
+  font-size: 2.4rem;
+}
+
+.descContainerMargin {
+  margin: 5% 5% 2% 5%;
+}
+
+tab1 {
+  padding-left: 2.5rem;
+}
+
+.tableItem {
+  background-color: rgb(238, 238, 238);
+  font-family: 'ArnoPro-Regular';
+  font-size: 2.3rem;
+  margin: 10px;
+  padding: 3px;
+  height: 108px;
+  overflow: hidden;
+  text-align: center;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  box-shadow: inset 0 0 0 0 rgb(238, 238, 238);
+}
+
+.tableItemText {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.hov:hover .tableItem {
+  box-shadow: inset 500px 0 0 0 #e0e0e0;
+}
+
+.nopadding {
+  padding: 0 !important;
+}
+
+.redMarker {
+  background-color: rgb(239, 43, 45);
+  width: 108px;
+  height: 108px;
+  font-family: 'ArnoPro-Regular';
+  font-size: 4.4rem;
+  color: rgb(255, 255, 255);
+  float: left;
+}
+
+.blueMarker {
+  background-color: rgb(0, 28, 93);
+}
+
+div.redMarker>p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.centr {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centr2 {
+  top: 40%;
+  left: 45%;
+}
+
+.centr3 {
+  top: 40%;
+  left: 75%;
+}
+
+.centr:hover .bottomCircleText {
+  font-size: 5.8rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.centr:hover .bottomCircle {
+  background-color: rgb(249, 249, 250);
+  cursor: pointer;
+  box-shadow: 0 0 0 30px rgb(178, 194, 201);
+}
+
+.bottomCircle {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: rgb(220, 220, 220);
+  top: 30%;
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.bottomCircleText {
+  position: absolute;
+  font-family: 'Berndal LT Std SC';
+  font-size: 4.8rem;
+  color: rgb(108, 108, 108);
+  letter-spacing: 2px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: font-size 0.5s, color 0.5s;
+}
+
+.bottomMobile {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .bannerText {
+    font-size: 14.278rem;
+  }
+  .bannerMountainText {
+    font-size: 3.8rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .bannerText {
+    font-size: 10.278rem;
+  }
+  .bannerMountainText {
+    font-size: 2.8rem;
+  }
+  .tableItem {
+    font-size: 2.0rem;
+  }
+  .bottomCircle {
+    width: 100px;
+    height: 100px;
+  }
+  .bottomCircleText {
+    font-size: 3.4rem;
+  }
+  .centr:hover .bottomCircleText {
+    font-size: 4.8rem;
+  }
+  .centr:hover .bottomCircle {
+    box-shadow: 0 0 0 20px rgb(178, 194, 201);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mountainRed {
+    top: 50%;
+  }
+  .menuBar {
+    width: 50px;
+    height: 5px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 4px;
+    margin: 6px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+  .logoFont {
+    font-size: 3.8rem;
+  }
+  .bannerText {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(0%, -45%);
+    -moz-transform: translate(0%, -45%);
+    -ms-transform: translate(0%, -45%);
+    -o-transform: translate(0%, -45%);
+    transform: translate(0%, -45%);
+    font-size: 8.278rem;
+  }
+  .bannerMountainText {
+    font-size: 1.8rem;
+  }
+  .bottomCircle {
+    width: 75px;
+    height: 75px;
+  }
+  .bottomCircleText {
+    font-size: 2.6rem;
+  }
+  .centr:hover .bottomCircleText {
+    font-size: 3.1rem;
+  }
+  .centr:hover .bottomCircle {
+    box-shadow: 0 0 0 15px rgb(178, 194, 201);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mountainRed {
+    height: 35%;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    top: 50%;
+  }
+  .flag {
+    width: 20px;
+  }
+  .logoFont {
+    font-size: 2.8rem;
+  }
+  .descriptionText {
+    font-size: 1.8rem;
+  }
+  .bannerText {
+    font-size: 6.278rem;
+  }
+  .bottomCircle {
+    display: none;
+  }
+  .bottomCircleText {
+    position: relative;
+    top: 0%;
+    left: 0%;
+  }
+  .centr {
+    display: none;
+  }
+  .bottomMobile {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .bottomBlock:hover {
+    font-size: 2.2rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .bottomBlock {
+    display: inline-block;
+    font-family: 'Berndal LT Std SC';
+    font-size: 1.8rem;
+    color: rgb(108, 108, 108);
+    letter-spacing: 2px;
+    transition: font-size 0.5s, color 0.5s;
+  }
+  @media screen and (max-width: 400px) {
+    .mountainRed {
+      height: 50%;
+    }
+    .bannerText {
+      font-size: 5.278rem;
+    }
+  }
+}
