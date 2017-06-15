@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
- $("a").on("click", function(e){
+ $("#aclick").click(function(){
    $("#menuPanel").fadeOut("slow", function(){
      $("#menuPanel").toggleClass("menuDeactivated");
     //  $(document.body).toggleClass("noScroll");
